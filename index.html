@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio DIW Imágenes de fondo y posicionamiento</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main{
+            top: 0;
+            left: 0;
+           height: 90vh;
+           position: fixed;
+           width: 100vw;
+           height: 90vh;
+           background-color: aquamarine;
+           background-image: url("https://picsum.photos/200");
+           background-repeat: no-repeat ;
+           background-position-x: right;
+           background-position-y: bottom;
+           
+        }
+        main img{
+            position: absolute;
+           background-size: contain;
+        }
+        footer{
+            height: 10vh;
+            background-color: red;
+            position: fixed;
+            width: 100vw;
+            bottom: 0;
+        }
+        footer img{
+            height: 80%;
+            width: auto;
+        }
+        #div1{
+            background-image: url("https://picsum.photos/seed/picsum/200/300");
+            background-position-x: left;
+            position: fixed;
+           width: 50%;
+           height: 50%;
+           background-repeat: no-repeat;
+           border: 1px solid rgb(183, 212, 136);
+        }
+        #div2{
+            background-image: url("https://picsum.photos/seed/picsum/200/300");
+            background-position-x: right;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+           height: 50%;
+           background-repeat: no-repeat;
+           border: 1px solid blue;
+        }
+        div{
+          background-color: chartreuse;  
+
+
+        }
+    </style>
+    <!---
+        --->
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+       <div id="div1"></div>
+       <div id="div2"></div>
+       <div><a href="html5.png"></a></div>
+    </main>
+    <footer>
+        <a href="https://picsum.photos/200/300?grayscale"></a>
+        <img src="https://picsum.photos/200/300?grayscale" alt="">
+    </footer>
+</body>
+</html>
